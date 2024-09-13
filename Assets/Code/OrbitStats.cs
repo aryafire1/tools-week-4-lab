@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class OrbitStats : MonoBehaviour
 {
-    public int speed;
+    public float speed;
+    public float distance;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +15,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        
     }
-
-
-    void Movement() {
-        transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0, 0) * Time.deltaTime * speed);
-    }
-    
 }
