@@ -18,7 +18,7 @@ public class OrbitManager : MonoBehaviour
         orbitObject = GameObject.FindGameObjectsWithTag("Orbit");
         foreach(var orbit in orbitObject)
         {
-            rotationDistance = Random.Range(2,8);
+            rotationDistance = Random.Range(1,5);
             rotationSpeed = Random.Range(5,90);
             orbitStats = orbit.GetComponent<OrbitStats>();
             orbitStats.distance = rotationDistance;
